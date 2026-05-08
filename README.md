@@ -14,7 +14,7 @@ Official PyTorch implementation of **"When Labels Have Structure: Improving Imag
 ## 🔑 Key Ideas
 
 - **Prediction Aggregation** — probabilities are propagated up the class hierarchy, penalizing mistakes more heavily when predicted and true classes are semantically distant.
-- **Ancestral Label Smoothing** — instead of uniform smoothing, probability mass is distributed to ancestor and sibling classes, encoding semantic proximity into the training signal.
+- **Ancestral Label Smoothing** — the ground-truth label mass is redistributed upward along the path from the true leaf class to the root, with each ancestor receiving geometrically decaying weight controlled by a dilution parameter *d*.
 - **Drop-in replacement** — HACE replaces `nn.CrossEntropyLoss` with no changes to model architecture or inference pipeline.
 
 ---
