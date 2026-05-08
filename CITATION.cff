@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+title: "When Labels Have Structure: Improving Image Classification with Hierarchy-Aware Cross-Entropy"
+message: "If you use this software, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: Chan
+    given-names: April
+  - family-names: D'Ascenzo
+    given-names: Davide
+  - family-names: Cultrera di Montesano
+    given-names: Sebastiano
+repository-code: "https://github.com/Kidara/hierarchy-aware-cross-entropy"
+url: "https://arxiv.org/abs/2605.06274"
+abstract: >
+  Standard cross-entropy is the default classification loss across virtually
+  all of machine learning, yet it treats all misclassifications equally,
+  ignoring the semantic distances that a class hierarchy encodes. We propose
+  Hierarchy-Aware Cross-Entropy (HACE), a drop-in replacement for standard
+  cross-entropy that incorporates a known class hierarchy directly into the
+  loss via prediction aggregation and ancestral label smoothing.
+keywords:
+  - image classification
+  - cross-entropy
+  - class hierarchy
+  - label smoothing
+  - deep learning
+license: MIT
+year: 2026
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/2605.06274"
+    description: arXiv preprint
+preferred-citation:
+  type: article
+  title: "When Labels Have Structure: Improving Image Classification with Hierarchy-Aware Cross-Entropy"
+  authors:
+    - family-names: Chan
+      given-names: April
+    - family-names: D'Ascenzo
+      given-names: Davide
+    - family-names: Cultrera di Montesano
+      given-names: Sebastiano
+  journal: "arXiv preprint arXiv:2605.06274"
+  year: 2026
+  url: "https://arxiv.org/abs/2605.06274"
